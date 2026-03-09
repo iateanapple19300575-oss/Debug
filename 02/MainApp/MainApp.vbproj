@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82A90DB5-5B4E-4169-A0D7-6B204C5F3D20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>MainApp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MainApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MainApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>MainApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>MainApp.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="VBReport8.CellReport, Version=8.0.5270.2611, Culture=neutral, PublicKeyToken=a562bca15217617c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\VB-Report8\Bin\VBReport8.CellReport.dll</HintPath>
+    </Reference>
+    <Reference Include="VBReport8.Document, Version=8.0.5270.2611, Culture=neutral, PublicKeyToken=5fef747f5909e4c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\VB-Report8\Bin\VBReport8.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="VBReport8.Shared, Version=8.0.5270.2611, Culture=neutral, PublicKeyToken=eb874eae9ad54445, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\VB-Report8\Bin\VBReport8.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="VBReport8.View, Version=8.0.5270.2611, Culture=neutral, PublicKeyToken=32543f28cb28d673, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\VB-Report8\Bin\VBReport8.View.dll</HintPath>
+    </Reference>
+    <Reference Include="VBReport8.Viewer, Version=8.0.5270.2611, Culture=neutral, PublicKeyToken=8bb5989c23433875, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\VB-Report8\Bin\VBReport8.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="VBReport8.Xls.Core, Version=8.0.5270.2611, Culture=neutral, PublicKeyToken=8b8fa29264754c4a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\VB-Report8\Bin\VBReport8.Xls.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="VBReport8.Xlsx.Core, Version=8.0.5270.2611, Culture=neutral, PublicKeyToken=d5c536c32e771da9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\VB-Report8\Bin\VBReport8.Xlsx.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\AppMain\frmTargetYearMonth\FormController\TargetYearMonthFormController.vb" />
+    <Compile Include="Boot\AppBootstrapper.vb" />
+    <Compile Include="Boot\PresetInitializer.vb" />
+    <Compile Include="StartUp.vb" />
+    <Compile Include="Application\AppMain\frmTargetYearMonth\Form\frmTargetYearMonth.Designer.vb">
+      <DependentUpon>frmTargetYearMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\AppMain\frmTargetYearMonth\Form\frmTargetYearMonth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\AppMain\Main\Form\GHRUN_Main.Designer.vb">
+      <DependentUpon>GHRUN_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\AppMain\Main\Form\GHRUN_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Application\AppMain\frmTargetYearMonth\Form\frmTargetYearMonth.resx">
+      <DependentUpon>frmTargetYearMonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\AppMain\Main\Form\GHRUN_Main.resx">
+      <DependentUpon>GHRUN_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppCommon\AppCommon.vbproj">
+      <Project>{d196d259-bd4f-4fc9-9e7e-063e3ddc4ec4}</Project>
+      <Name>AppCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppParts\SystemEnv.vbproj">
+      <Project>{6dd86c0e-ebff-4826-80f1-532633dda5bc}</Project>
+      <Name>SystemEnv</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.vbproj">
+      <Project>{494b4028-05d2-4dd0-8a01-89ae03cab353}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MasterImport\MasterImport.vbproj">
+      <Project>{b11f1bf7-b1b7-4f92-9e8b-d8ee4f895efc}</Project>
+      <Name>MasterImport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PunchDataImport\PunchDataImport.vbproj">
+      <Project>{9182ce09-f97c-486a-9f83-e3ef8a404a00}</Project>
+      <Name>PunchDataImport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserControl\UserControl.vbproj">
+      <Project>{72291187-bae7-4b14-b5d4-120b269fc48b}</Project>
+      <Name>UserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verification\Verification.vbproj">
+      <Project>{845fe238-0176-48f7-8bf2-313afaa5dcf9}</Project>
+      <Name>Verification</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\AppMain\frmTargetYearMonth\Repository\" />
+    <Folder Include="Application\AppMain\frmTargetYearMonth\Service\" />
+    <Folder Include="Application\AppMain\Main\Repository\" />
+    <Folder Include="Application\AppMain\Main\Service\" />
+    <Folder Include="Application\Common\" />
+    <Folder Include="Application\DataImport\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Service\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

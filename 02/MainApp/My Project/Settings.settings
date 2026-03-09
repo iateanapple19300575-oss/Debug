@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="PunchingInOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PunchingInEarly" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PunchingInLate" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PunchingOutLate" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PunchingOutEarly" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LectureCategorys" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0:(未選択),1:春期,2:夏期,4:冬期</Value>
+    </Setting>
+    <Setting Name="Transp_Exp_Subjects" Type="System.String" Scope="User">
+      <Value Profile="(Default)">K:国語,M:算数,S:社会,R:理科,G:ユーリカ</Value>
+    </Setting>
+    <Setting Name="Site_Group" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0:(未選択),1:グループ①,2:グループ②,3:グループ③,4:札幌,5:新横浜</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
